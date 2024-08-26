@@ -64,3 +64,11 @@ or
 ```bash
 hugo server --buildDrafts --cleanDestinationDir --disableFastRender --logLevel info -N --contentDir example/content --config example/hugo.toml
 ```
+
+## Develop this theme in local
+
+```bash
+git clone https://github.com/2b3d4f/mnml
+cd mnml
+hugo server --buildDrafts --cleanDestinationDir --disableFastRender --logLevel info -N --contentDir example/content --config example/hugo.toml
+```
