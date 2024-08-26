@@ -2,7 +2,36 @@ baseURL = 'https://example.org/'
 languageCode = 'en-US'
 title = 'mnml'
 
+[taxonomies]
+tag = 'tags'
+category = 'categories'
+author = 'authors'
+
+[pagination]
+path = "/"
+
+[[menus.main]]
+name = 'Home'
+pageRef = '/'
+weight = 10
+
+[[menus.main]]
+name = 'Posts'
+pageRef = '/posts'
+weight = 20
+
+# [[menus.main]] # Don't forget to uncomment these lines if you use categories
+# name = 'Categories'
+# pageRef = '/categories'
+# weight = 30
+
+[[menus.main]]
+name = 'Tags'
+pageRef = '/tags'
+weight = 40
+
 [module]
-  [module.hugoVersion]
-    extended = false
-    min = "0.133.0"
+
+[module.hugoVersion]
+extended = false
+min = "0.133.0"
