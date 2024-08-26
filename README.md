@@ -6,12 +6,6 @@
 
 ## Configuration
 
-## Edit mnml from source code
-
-1. `git clone https://github.com/2b3d4f/mnml`
-2. `cd ./mnml`
-3. `npm install`
-
 ## Demo
 
 [mnml](https://2b3d4f.github.io/mnml)
