@@ -3,6 +3,7 @@ languageCode = 'en-US'
 title = 'mnml'
 
 [params]
+test1 = 'test1'
     [params.workaround]
     deeplInputControllerMargin = false
     [params.style]
@@ -10,8 +11,6 @@ title = 'mnml'
 
 [taxonomies]
 tag = 'tags'
-category = 'categories'
-author = 'authors'
 
 [pagination]
 path = "/"
