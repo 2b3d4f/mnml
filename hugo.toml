@@ -9,31 +9,8 @@ test1 = 'test1'
     [params.style]
     fontFamily = 'Helvetica, Arial, Roboto, "Noto Sans", sans-serif'
 
-[taxonomies]
-tag = 'tags'
-
 [pagination]
 path = "/"
-
-[[menus.main]]
-name = 'Home'
-pageRef = '/'
-weight = 10
-
-[[menus.main]]
-name = 'Posts'
-pageRef = '/posts'
-weight = 20
-
-# [[menus.main]] # Don't forget to uncomment these lines if you use categories
-# name = 'Categories'
-# pageRef = '/categories'
-# weight = 30
-
-[[menus.main]]
-name = 'Tags'
-pageRef = '/tags'
-weight = 40
 
 [module]
 

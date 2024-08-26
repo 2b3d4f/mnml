@@ -1,8 +1,7 @@
 {{ define "main" }}
-    {{ if .Content }}
-        {{ .Params.test | default .Site.Params.test }}
-        {{ .Content }}
-    {{ else }}
-        <p>Hello, world!</p>
-    {{ end }}
+  {{ if .Content }}
+    {{ .Content }}
+  {{ else }}
+    <p>Hello, world!</p>
+  {{ end }}
 {{ end }}
