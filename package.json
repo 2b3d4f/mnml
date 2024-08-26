@@ -1,0 +1,19 @@
+{
+  "name": "mnml",
+  "version": "1.0.0",
+  "description": "[mnml-demo](https://github.com/2b3d4f/mnml-demo)",
+  "main": "index.js",
+  "directories": {
+    "example": "example"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "prettier": "^3.3.3",
+    "prettier-plugin-go-template": "^0.0.15"
+  }
+}

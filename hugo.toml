@@ -1,0 +1,20 @@
+baseURL = 'https://example.org/'
+languageCode = 'en-US'
+title = 'mnml'
+
+[params]
+# Font family
+fontFamily = 'Arial, Helvetica, "Noto Sans", sans-serif'
+# Date format
+dateFormat = "Jan 2, 2006"
+# Paginate
+enablePaginate = true
+enablePaginateInTaxonomy = false
+pagerSize = 5
+# Workarouds
+waDeeplExtention = false
+
+[module]
+  [module.hugoVersion]
+    extended = false
+    min = "0.133.0"
