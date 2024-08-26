@@ -3,3 +3,4 @@
 {{ hugo.Generator }}
 <title>{{ if .IsHome }}{{ site.Title }}{{ else }}{{ printf "%s | %s" .Title site.Title }}{{ end }}</title>
 {{ partialCached "head/style.html" . }}
+{{ partialCached "head/script.html" . }}
