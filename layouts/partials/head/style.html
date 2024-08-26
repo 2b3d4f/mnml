@@ -1,0 +1,48 @@
+{{- with resources.Get "style/reset.css" }}
+  {{- if eq hugo.Environment "development" }}
+    <link
+      rel="stylesheet"
+      href="{{ .RelPermalink }}"
+    />
+  {{- else }}
+    {{- with . | minify | fingerprint }}
+      <link
+        rel="stylesheet"
+        href="{{ .RelPermalink }}"
+        integrity="{{ .Data.Integrity }}"
+        crossorigin="anonymous"
+      />
+    {{- end }}
+  {{- end }}
+{{- end }}
+{{- with .Params.style.fontFamily | default .Site.Params.style.fontFamily }}
+  <style>
+    body {
+      font-family: {{ . | safeCSS }};
+    }
+  </style>
+{{- end }}
+{{- with resources.Get "style/main.css" }}
+  {{- if eq hugo.Environment "development" }}
+    <link
+      rel="stylesheet"
+      href="{{ .RelPermalink }}"
+    />
+  {{- else }}
+    {{- with . | minify | fingerprint }}
+      <link
+        rel="stylesheet"
+        href="{{ .RelPermalink }}"
+        integrity="{{ .Data.Integrity }}"
+        crossorigin="anonymous"
+      />
+    {{- end }}
+  {{- end }}
+{{- end }}
+{{- with .Params.workaround.deeplInputControllerMargin | default .Site.Params.workaround.deeplInputControllerMargin }}
+  <style>
+    deepl-input-controller {
+      margin-top: -16px;
+    }
+  </style>
+{{- end }}

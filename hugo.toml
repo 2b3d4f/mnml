@@ -2,6 +2,12 @@ baseURL = 'https://example.org/'
 languageCode = 'en-US'
 title = 'mnml'
 
+[params]
+    [params.workaround]
+    deeplInputControllerMargin = false
+    [params.style]
+    fontFamily = 'Helvetica, Arial, Roboto, "Noto Sans", sans-serif'
+
 [taxonomies]
 tag = 'tags'
 category = 'categories'
