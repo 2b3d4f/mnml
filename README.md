@@ -14,7 +14,7 @@
 
 ## Demo
 
-[mnml-demo](https://2b3d4f.github.io/mnml-demo)
+[mnml](https://2b3d4f.github.io/mnml)
 
 or
 
