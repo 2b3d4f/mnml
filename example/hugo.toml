@@ -1,6 +1,0 @@
-baseURL = 'https://example.org/'
-languageCode = 'en-US'
-title = 'mnml-demo'
-
-[[module.imports]]
-path = 'github.com/2b3d4f/mnml'
