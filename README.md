@@ -62,5 +62,5 @@ git submodule update --remote --recursive
 or
 
 ```bash
-hugo server --buildDrafts --cleanDestinationDir --disableFastRender --logLevel info -N --contentDir ./example/content --config ./example/hugo.toml
+hugo server --buildDrafts --cleanDestinationDir --disableFastRender --logLevel info -N --contentDir example/content --config example/hugo.toml
 ```
