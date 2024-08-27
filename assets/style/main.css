@@ -1,3 +1,7 @@
+:root {
+  font-size: 16px;
+}
+
 body {
   /* font-family: sans-serif; */
   display: flex;
@@ -16,5 +20,38 @@ body {
 
   >main {
     flex-grow: 1;
+  }
+}
+
+.list {
+  li::before {
+    content: "-";
+    margin-inline-end: 0.5rem;
+  }
+}
+
+.content > *:not(:first-child) {
+  margin-block-start: 1rem;
+}
+
+.content {
+  ul {
+    li::before {
+      content: "-";
+      margin-inline-end: 0.5rem;
+    }
+    li > ul {
+      margin-inline-start: 1rem;
+    }
+  }
+  ol {
+    counter-reset: item;
+    li::before {
+      content: counter(item) ". ";
+      counter-increment: item;
+    }
+    li > ol {
+      margin-inline-start: 1rem;
+    }
   }
 }

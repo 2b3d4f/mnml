@@ -1,6 +1,6 @@
 {{ define "main" }}
   <h1>{{ .Title }}</h1>
-  <ul>
+  <ul class="list">
     {{ range .Pages }}
       <li>
         <a href="{{ .RelPermalink }}">{{ .Title }}</a>
