@@ -8,6 +8,7 @@ showProposeEditOn = false
 proposeEditRepos = ''
 proposeEditLabel = 'Propose edits on GitHub'
 proposeEditContentDir = 'content'
+proposeEditTarget = '_blank'
     [params.workaround]
     deeplInputControllerMargin = false
     [params.style]

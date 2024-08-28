@@ -71,3 +71,7 @@ header {
     }
   }
 }
+
+.propose-edit-link {
+  margin-block-start: 1rem;
+}
