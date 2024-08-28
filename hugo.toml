@@ -9,10 +9,15 @@ proposeEditRepos = ''
 proposeEditLabel = 'Propose edits on GitHub'
 proposeEditContentDir = 'content'
 proposeEditTarget = '_blank'
-    [params.workaround]
-    deeplInputControllerMargin = false
-    [params.style]
-    fontFamily = 'Helvetica, Arial, Roboto, "Noto Sans", sans-serif'
+
+[params.workaround]
+deeplInputControllerMargin = false
+
+[params.style]
+fontFamily = 'Helvetica, Arial, "Noto Sans", sans-serif'
+
+[params.googleFonts]
+path = ""
 
 [pagination]
 path = "/"

@@ -15,6 +15,21 @@
     {{- end }}
   {{- end }}
 {{- end }}
+{{- if .Site.Params.googleFonts.path }}
+  <link
+    rel="preconnect"
+    href="https://fonts.googleapis.com"
+  />
+  <link
+    rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin
+  />
+  <link
+    rel="stylesheet"
+    href="{{ .Site.Params.googleFonts.path }}"
+  />
+{{- end }}
 {{- with .Params.style.fontFamily | default .Site.Params.style.fontFamily }}
   <style>
     body {
