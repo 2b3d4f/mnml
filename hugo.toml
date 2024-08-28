@@ -23,7 +23,7 @@ fontFamily = 'Georgia, "Times New Roman", "Noto Serif", serif'
 fontFamily = '"SF Mono", Consolas, "DejaVu Sans Mono", "Roboto Mono", "Courier New", monospace'
 
 [params.fonts.google]
-path = ""
+url = ""
 
 [pagination]
 path = "/"
