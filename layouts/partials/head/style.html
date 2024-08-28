@@ -54,7 +54,7 @@
     {{- end }}
   {{- end }}
 {{- end }}
-{{- with .Params.workaround.deeplInputControllerMargin | default .Site.Params.workaround.deeplInputControllerMargin }}
+{{- if .Params.workaround.deeplInputControllerMargin | default .Site.Params.workaround.deeplInputControllerMargin }}
   <style>
     deepl-input-controller {
       margin-top: -16px;
