@@ -13,10 +13,16 @@ proposeEditTarget = '_blank'
 [params.workaround]
 deeplInputControllerMargin = false
 
-[params.style]
+[params.fonts]
 fontFamily = 'Helvetica, Arial, "Noto Sans", sans-serif'
 
-[params.googleFonts]
+[params.fonts.serif]
+fontFamily = 'Georgia, "Times New Roman", "Noto Serif", serif'
+
+[params.fonts.monospace]
+fontFamily = '"SF Mono", Consolas, "DejaVu Sans Mono", "Roboto Mono", "Courier New", monospace'
+
+[params.fonts.google]
 path = ""
 
 [pagination]

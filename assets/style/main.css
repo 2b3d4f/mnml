@@ -1,4 +1,4 @@
-:root {
+:where(:root) {
   font-size: 16px;
 }
 
@@ -75,9 +75,10 @@ header {
   }
 }
 
-.content figure {
+.content figure:has(blockquote) {
   padding: 1rem;
   border-left: 0.2rem solid;
+  font-family: var(--params-fonts-serif-fontfamily);
 
   >blockquote {
     display: flex;
@@ -128,10 +129,13 @@ header {
 
 .content pre {
   /* TODO: #9 Add parameter to specify monospace/sans-serif/serif font-family */
-  font-family: "SF Mono", Consolas, "DejaVu Sans Mono", "Roboto Mono", monospace;
   border-radius: 1rem;
   padding: 1rem;
   overflow-x: auto;
+}
+
+.content :is(pre, code) {
+  font-family: var(--params-fonts-monospace-fontfamily);
 }
 
 .content .alert {

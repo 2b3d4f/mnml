@@ -15,7 +15,7 @@
     {{- end }}
   {{- end }}
 {{- end }}
-{{- if .Site.Params.googleFonts.path }}
+{{- if .Site.Params.fonts.google.path }}
   <link
     rel="preconnect"
     href="https://fonts.googleapis.com"
@@ -27,10 +27,10 @@
   />
   <link
     rel="stylesheet"
-    href="{{ .Site.Params.googleFonts.path }}"
+    href="{{ .Site.Params.fonts.google.path }}"
   />
 {{- end }}
-{{- with .Params.style.fontFamily | default .Site.Params.style.fontFamily }}
+{{- with .Params.fonts.fontFamily | default .Site.Params.fonts.fontFamily }}
   <style>
     body {
       font-family: {{ . | safeCSS }};
