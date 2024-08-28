@@ -4,7 +4,7 @@ title = 'mnml'
 
 [params]
 test1 = 'test1'
-showProposeEditOn = false
+showProposeEdit = false
 proposeEditRepos = ''
 proposeEditLabel = 'Propose edits on GitHub'
 proposeEditContentDir = 'content'

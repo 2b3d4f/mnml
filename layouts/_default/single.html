@@ -6,7 +6,7 @@
     <time datetime="{{ $dateMachine }}">{{ $dateHuman }}</time>
   </div>
   <section class="content">{{ .Content }}</section>
-  {{- if .Params.showProposeEditOn | default .Site.Params.showProposeEditOn }}
+  {{- if .Params.showProposeEdit | default .Site.Params.showProposeEdit }}
     <p class="propose-edit-link">
       {{- $path := .File.Path }}
       <a
