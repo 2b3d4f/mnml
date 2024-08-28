@@ -27,7 +27,8 @@ header {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
-  nav > ul {
+
+  nav>ul {
     li::before {
       content: "-";
       margin-inline-end: 0.5rem;
@@ -46,8 +47,31 @@ header {
   margin-block-start: 0.5rem;
 }
 
-.content > *:not(:first-child) {
+.content>*:not(:first-child) {
   margin-block-start: 1rem;
+}
+
+/* figure > blockquote (+ figcaption) */
+
+.content figure {
+  padding: 1rem;
+  border-left: 0.25rem solid;
+
+  >blockquote {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
+    +figcaption {
+      margin-block-start: 0.5rem;
+      font-style: italic;
+
+      &::before {
+        content: "—";
+        margin-inline-end: 0.5rem;
+      }
+    }
+  }
 }
 
 .content {
@@ -56,20 +80,56 @@ header {
       content: "-";
       margin-inline-end: 0.5rem;
     }
-    li > ul {
+
+    li>ul {
       margin-inline-start: 1rem;
     }
   }
+
   ol {
     counter-reset: item;
+
     li::before {
       content: counter(item) ". ";
       counter-increment: item;
     }
-    li > ol {
+
+    li>ol {
       margin-inline-start: 1rem;
     }
   }
+}
+
+.content .alert {
+  padding: 1rem;
+  border: 2px solid;
+  border-radius: 1rem;
+  /* color: black;
+
+  &.alert-note {
+    border-color: cornflowerblue;
+    background-color: aliceblue;
+  }
+
+  &.alert-tip {
+    border-color: darkgreen;
+    background-color: honeydew;
+  }
+
+  &.alert-important {
+    border-color: darkred;
+    background-color: mistyrose;
+  }
+
+  &.alert-warning {
+    border-color: darkred;
+    background-color: mistyrose;
+  }
+
+  &.alert-caution {
+    border-color: darkgoldenrod;
+    background-color: lemonchiffon;
+  } */
 }
 
 .propose-edit-link {
