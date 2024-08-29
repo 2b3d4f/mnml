@@ -127,15 +127,34 @@ header {
   }
 }
 
+
+.content :is(pre, code) {
+  font-family: var(--params-fonts-monospace-fontfamily);
+}
+
 .content pre {
-  /* TODO: #9 Add parameter to specify monospace/sans-serif/serif font-family */
   border-radius: 1rem;
   padding: 1rem;
   overflow-x: auto;
 }
 
-.content :is(pre, code) {
-  font-family: var(--params-fonts-monospace-fontfamily);
+.content code:not(:has(*)) {
+  border: 1px solid;
+  border-radius: 4px;
+  padding-inline: 0.25rem;
+}
+
+.content kbd:has(kbd) {
+  display: inline-flex;
+  margin-inline: 0.25rem;
+  gap: 0.1rem;
+}
+
+.content kbd:not(:has(kbd)) {
+  border: 1px solid;
+  border-radius: 0.25rem;
+  box-shadow: 0 2px 0 0;
+  padding-inline: 0.25rem;
 }
 
 .content .alert {
