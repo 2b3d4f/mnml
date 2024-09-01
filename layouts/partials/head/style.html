@@ -16,19 +16,7 @@
   {{- end }}
 {{- end }}
 {{- if .Site.Params.fonts.google.url }}
-  <link
-    rel="preconnect"
-    href="https://fonts.googleapis.com"
-  />
-  <link
-    rel="preconnect"
-    href="https://fonts.gstatic.com"
-    crossorigin
-  />
-  <link
-    rel="stylesheet"
-    href="{{ .Site.Params.fonts.google.url }}"
-  />
+  {{- partialCached "gfonts.html" (dict "url" .Site.Params.fonts.google.url "fontsDir" "fonts/gfonts" "cssDir" "style/gfonts" "cssFile" "gfonts.css" )}}
 {{- end }}
 {{- with .Params.fonts.fontFamily | default .Site.Params.fonts.fontFamily }}
   <style>
