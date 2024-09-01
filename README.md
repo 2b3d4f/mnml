@@ -1,74 +1,62 @@
 # mnml
 
-mnml is a minimalistic theme for [Hugo](https://gohugo.io/).
+mnml is a under development minimalistic theme for [Hugo](https://gohugo.io/).
 
 ## Features
 
+Under construction.
+
 ## Installation
 
-1. [Install Hugo >= v0.133.0](https://gohugo.io/getting-started/installing/).
-2. Create a new Hugo site.
+> mnml does not support Git Submodule. You can use Hugo Modules to install mnml.
+
+1. Install [Hugo >= v0.133.0](https://gohugo.io/getting-started/installing/).
+2. Install [Go Programming Language](https://go.dev/doc/install).
+3. Create a new Hugo site.
 
     ```bash
-    hugo new site <your-site-name> --format toml
+    hugo new site <site_name> --format toml
     ```
 
-3. Install mnml.
-
-### Method 1: Hugo Modules (recommended)
-
-1. Install [Go Programming Language](https://go.dev/doc/install).
-2. Initialize your Hugo site.
+4. Initialize your Hugo site.
 
    ```bash
-    hugo mod init <your-site-git-repo>
+    hugo mod init <repo_url>
     ```
 
-3. Add mnml in your config.
+5. Add mnml in your config.
 
     ```toml
+    # hugo.toml
     [module]
         [[module.imports]]
         path = "github.com/2b3d4f/mnml"
     ```
 
-#### Update module
+### Update mnml
 
 ```bash
 hugo mod get -u
 ```
 
-### Method 2: Git Submodule
-
-1. Add mnml as a submodule.
-
-    ```bash
-    git submodule add --depth 1 https://github.com/2b3d4f/mnml themes/mnml
-    git submodule update --init --recursive
-    ```
-
-#### Update submodule
-
-```bash
-git submodule update --remote --recursive
-```
-
 ## Configuration
+
+Under construction.
 
 ## Demo
 
-[mnml](https://2b3d4f.github.io/mnml)
+[mnml-demo](https://2b3d4f.github.io/mnml-demo)
 
-or
+<!-- or
 
 ```bash
 hugo server --buildDrafts --cleanDestinationDir --disableFastRender --logLevel info -N --contentDir example/content --config example/hugo.toml
-```
+``` -->
 
-## Develop this theme in local
+<!-- ## Develop this theme in local
 
 ```bash
 git clone https://github.com/2b3d4f/mnml
 cd mnml
 hugo server --buildDrafts --cleanDestinationDir --disableFastRender --logLevel info -N --contentDir example/content --config example/hugo.toml
-```
+``` -->
