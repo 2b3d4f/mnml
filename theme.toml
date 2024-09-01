@@ -5,7 +5,7 @@ description = 'Minimalist theme for Hugo'
 
 homepage = 'https://github.com/2b3d4f/mnml'
 
-demosite = 'https://2b3d4f.github.io/mnml'
+demosite = 'https://2b3d4f.github.io/mnml-demo'
 
 tags = ['blog', 'minimal']
 features = ['some', 'awesome', 'features']
