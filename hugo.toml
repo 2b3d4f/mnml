@@ -33,5 +33,3 @@ path = "/"
 [module.hugoVersion]
 extended = false
 min = "0.133.0"
-[[module.imports]]
-path = 'github.com/2b3d4f/hugo-module-host-gfonts-local'
