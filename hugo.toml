@@ -3,15 +3,6 @@ languageCode = 'en-US'
 title = 'mnml'
 
 [params]
-test1 = 'test1'
-showProposeEdit = false
-proposeEditRepos = ''
-proposeEditLabel = 'Propose edits on GitHub'
-proposeEditContentDir = 'content'
-proposeEditTarget = '_blank'
-
-[params.workaround]
-deeplInputControllerMargin = false
 
 [params.fonts]
 fontFamily = 'Helvetica, Arial, "Noto Sans", sans-serif'
@@ -24,6 +15,20 @@ fontFamily = '"SF Mono", Consolas, "DejaVu Sans Mono", "Roboto Mono", "Courier N
 
 [params.fonts.google]
 url = ""
+
+[params.content] # Settings in params.content can be overridden by front matter
+showEditOn = false
+editOnRepos = ''
+editOnLabel = 'Propose edits on GitHub'
+editOnContentDir = 'content'
+editOnTarget = '_blank'
+
+[params.footer]
+showThemeBy = true
+showBuiltWith = true
+
+[params.workaround]
+deeplInputControllerMargin = false
 
 [pagination]
 path = "/"
