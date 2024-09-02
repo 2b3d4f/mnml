@@ -1,1 +1,11 @@
-<p>Copyright {{ now.Year }}. All rights reserved.</p>
+<p><small>Copyright {{ now.Year }}. All rights reserved.</small></p>
+{{ with .Site.Params.footer.showBuiltWith }}
+  <p>
+    <small>Built with <a href="https://gohugo.io/" target="_blank"><b>Hugo</b></a>.</small>
+  </p>
+{{ end }}
+{{ with .Site.Params.footer.showThemeBy }}
+  <p>
+    <small>Theme <a href="https://github.com/2b3d4f/mnml" target="_blank"><b>mnml</b></a> by 2b3d4f.</small>
+  </p>
+{{ end }}
