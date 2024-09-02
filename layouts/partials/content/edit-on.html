@@ -1,0 +1,9 @@
+<p class="propose-edit-link">
+  {{- $path := .File.Path }}
+  <a
+    href="
+    {{- .Params.content.editOnRepos | default .Site.Params.content.editOnRepos }}/blob/main/{{ .Params.content.editOnContentDir | default .Site.Params.content.editOnContentDir }}/{{ replace $path "\\" "/" }}"
+    target="{{- .Params.content.editOnTarget | default .Site.Params.content.editOnTarget }}"
+    >{{- .Params.content.editOnLabel | default .Site.Params.content.editOnLabel }}</a
+  >
+</p>
