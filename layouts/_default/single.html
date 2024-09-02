@@ -6,15 +6,7 @@
     <time datetime="{{ $dateMachine }}">{{ $dateHuman }}</time>
   </div>
   <section class="content">{{ .Content }}</section>
-  {{- if .Params.showProposeEdit | default .Site.Params.showProposeEdit }}
-    <p class="propose-edit-link">
-      {{- $path := .File.Path }}
-      <a
-        href="
-      {{- .Params.proposeEditRepos | default .Site.Params.proposeEditRepos }}/blob/main/{{ .Params.proposeEditContentDir | default .Site.Params.proposeEditContentDir }}/{{ replace $path "\\" "/" }}"
-        target="{{- .Params.proposeEditTarget | default .Site.Params.proposeEditTarget }}"
-        >{{- .Params.proposeEditLabel | default .Site.Params.proposeEditLabel }}</a
-      >
-    </p>
+  {{- if .Params.content.showEditOn | default .Site.Params.content.showEditOn }}
+    {{ partial "content/edit-on.html" . }}
   {{- end }}
 {{ end }}
