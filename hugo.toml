@@ -16,7 +16,7 @@ fontFamily = '"SF Mono", Consolas, "DejaVu Sans Mono", "Roboto Mono", "Courier N
 [params.fonts.google]
 url = ""
 
-[params.content] # Settings in params.content can be overridden by front matter
+[params.content] # This settings can be overridden by front matter
 showEditOn = false
 editOnRepos = ''
 editOnLabel = 'Propose edits on GitHub'
